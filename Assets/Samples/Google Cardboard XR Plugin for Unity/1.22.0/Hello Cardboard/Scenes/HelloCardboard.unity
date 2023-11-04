@@ -124,6 +124,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10867421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10867423}
+  - component: {fileID: 10867422}
+  m_Layer: 0
+  m_Name: VR Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &10867422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10867421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd68f027e715c44aa8d097000d4cccfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &10867423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10867421}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148680882
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +459,7 @@ MonoBehaviour:
   _url: https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyCXZSJX3XpchjPL0X_ese_sct-7FhNuH0Q
   _ionAssetID: 0
   _ionAccessToken: 
-  _maximumScreenSpaceError: 80
+  _maximumScreenSpaceError: 40
   _preloadAncestors: 0
   _preloadSiblings: 0
   _forbidHoles: 1
@@ -463,7 +507,7 @@ Transform:
   m_GameObject: {fileID: 907292807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -667,7 +711,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -680,9 +724,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.03
-  far clip plane: 15000
-  field of view: 60
+  near clip plane: 50
+  far clip plane: 20000
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1016,12 +1060,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originAuthority: 1
-  _latitude: 40.69000979508426
-  _longitude: -74.04538590195664
-  _height: 19.272924587392676
-  _ecefX: 1331256.55481537
-  _ecefY: -4656561.613451922
-  _ecefZ: 4136394.1505991328
+  _latitude: 40.69004080833145
+  _longitude: -74.04539786473305
+  _height: 16.978752896699955
+  _ecefX: 1331254.4872204172
+  _ecefY: -4656558.060002691
+  _ecefZ: 4136395.2662564004
   _scale: 10
 --- !u!4 &1770849902
 Transform:
@@ -1126,3 +1170,4 @@ SceneRoots:
   - {fileID: 907292808}
   - {fileID: 1770849902}
   - {fileID: 196484322}
+  - {fileID: 10867423}

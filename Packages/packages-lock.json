@@ -22,6 +22,15 @@
       },
       "hash": "17e19f289a527844abc08404d0ef6e961927b2d6"
     },
+    "com.itisnajim.socketiounity": {
+      "version": "https://github.com/itisnajim/SocketIOUnity.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
+      },
+      "hash": "c9e06b15391449ad42fd9b0f39fea48054751bcd"
+    },
     "com.unity.burst": {
       "version": "1.8.9",
       "depth": 1,
@@ -81,6 +90,13 @@
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},

@@ -36,7 +36,8 @@ public class SpeechRecognizerDemo : MonoBehaviour
         speechPlugin.SetCallingPackage("com.mycoolcompany.mygame");
 
         AddSpeechPluginListener();
-        InvokeRepeating("StartListening", 0.0f, interval);
+
+        InvokeRepeating("StartListening", 20.0f, interval);
     }
 
     private void OnEnable()

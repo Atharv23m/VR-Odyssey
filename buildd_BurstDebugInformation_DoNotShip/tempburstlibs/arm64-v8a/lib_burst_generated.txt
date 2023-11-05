@@ -40,6 +40,7 @@ Library: D:\VR-Odyssey\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_genera
 --assembly-defines=Unity.RenderPipeline.Universal.ShaderLibrary;
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
+--assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.XR.Management;
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
@@ -91,6 +92,7 @@ Library: D:\VR-Odyssey\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_genera
 --assembly-defines=Unity.RenderPipeline.Universal.ShaderLibrary;
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
+--assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.XR.Management;
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml

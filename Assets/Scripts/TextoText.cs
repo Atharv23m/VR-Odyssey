@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class GoogleLanguageAPIRequest : MonoBehaviour
 {
@@ -24,15 +25,17 @@ public class GoogleLanguageAPIRequest : MonoBehaviour
         public Candidate[] candidates;
     }
 
+    public string prom = "";
     public string result = "error";
+    public Text Prompt;
     private const string apiKey = "AIzaSyDQogd1EAVXFgXwZaBA5hTMxul3KWl8URA"; // Replace with your actual API key
     private const string url = "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=" + apiKey;
 
-    [System.Obsolete]
-    private IEnumerator Start()
+    public void OnClick() // This function will be called on button click
     {
-        // Create the request data
-        string requestData = "{\"prompt\": {\"text\": \"Why are PALM api not in the top 10?\"}}";
+        // Create a custom JSON request data string based on 'prom'
+        string limit = "Answer in not more than 50 words";
+        string requestData = $"{{\"prompt\": {{\"text\": \"{prom + limit}\"}}}}";
 
         // Set up the UnityWebRequest
         var request = new UnityWebRequest(url, "POST");
@@ -42,7 +45,12 @@ public class GoogleLanguageAPIRequest : MonoBehaviour
         request.SetRequestHeader("Content-Type", "application/json");
 
         // Send the request
-        yield return request.SendWebRequest();
+        request.SendWebRequest().completed += OnRequestCompleted;
+    }
+
+    private void OnRequestCompleted(AsyncOperation operation)
+    {
+        var request = ((UnityWebRequestAsyncOperation)operation).webRequest;
 
         if (request.isNetworkError || request.isHttpError)
         {
@@ -60,11 +68,13 @@ public class GoogleLanguageAPIRequest : MonoBehaviour
 
             // Access the "output" from the first candidate
             result = jsonData.candidates[0].output;
+            Prompt.text = jsonData.candidates[0].output;
             /*            print(result);
             */            // Now, 'output' contains the value "48°51?29?N 2°17?40?E"
-
-
-
         }
+    }
+    private void Update()
+    {
+        prom = Prompt.text;
     }
 }

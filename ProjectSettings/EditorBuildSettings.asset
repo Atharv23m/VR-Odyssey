@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.22.0/Hello Cardboard/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
+  - enabled: 0
+    path: Assets/SpeechPlugin/SpeechAndText/Sample/SampleSpeechToText.unity
+    guid: d9447599b4cad0245ac00fa552c354b6
+  - enabled: 0
+    path: Assets/AndroidUltimatePlugin/SpeechTTS/Scenes/SpeechTTSDemo.unity
+    guid: 3f2a4f51326304e80be08a2e8e86c64d
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: eee3848843666c54eb75c2a8aaa2aed0,
       type: 2}

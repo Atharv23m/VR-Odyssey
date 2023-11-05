@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 {
     public SocketIOUnity socket;
     public string serverUrlLink = "https://56ec-2409-40e3-1c-3096-1ed6-2139-34f3-6a16.ngrok-free.app/";
+    public SpeechRecognizerDemo demo;
 
     public float acceleration = 50; // how fast you accelerate
     public float dampingCoefficient = 5;
@@ -60,7 +61,13 @@ public class Movement : MonoBehaviour
                     AddMovement(Vector3.up);
                     break;
                 case "e":
+                    demo.StartListening();
                     AddMovement(Vector3.down);
+                    break;
+                case "x":
+                    demo.StartListening();
+                    break;
+                case "z":
                     break;
                 default:
                     break;

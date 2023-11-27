@@ -548,9 +548,9 @@ MonoBehaviour:
   _url: https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyCXZSJX3XpchjPL0X_ese_sct-7FhNuH0Q
   _ionAssetID: 0
   _ionAccessToken: 
-  _maximumScreenSpaceError: 40
-  _preloadAncestors: 0
-  _preloadSiblings: 0
+  _maximumScreenSpaceError: 30
+  _preloadAncestors: 1
+  _preloadSiblings: 1
   _forbidHoles: 1
   _maximumSimultaneousTileLoads: 20
   _maximumCachedBytes: 536870912
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34469db3f4144b458490a5c4b17300c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverUrlLink: https://0157-2409-40e3-19-e0e-268e-5fb1-ebf5-4bdb.ngrok-free.app
+  serverUrlLink: https://9d38-2409-4089-ac1a-2d22-45c0-7b64-fe33-8419.ngrok-free.app
   demo: {fileID: 356304806}
   acceleration: 9000
   dampingCoefficient: 30
@@ -1036,7 +1036,7 @@ Transform:
   m_GameObject: {fileID: 959308587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.042747803, z: 0, w: 0.9990859}
-  m_LocalPosition: {x: 1.08, y: 0, z: 0}
+  m_LocalPosition: {x: 4.4, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1862,13 +1862,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1305e05d46db92498ce698a4c366a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _originAuthority: 1
+  _originAuthority: 0
   _latitude: 40.69004080833145
   _longitude: -74.04539786473305
-  _height: 16.978752896699955
-  _ecefX: 1331254.4872204172
-  _ecefY: -4656558.060002691
-  _ecefZ: 4136395.2662564004
+  _height: 50
+  _ecefX: 1331261.3696342232
+  _ecefY: -4656582.133806597
+  _ecefZ: 4136416.7950070826
   _scale: 10
 --- !u!4 &1770849902
 Transform:
